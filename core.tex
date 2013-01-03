@@ -1,0 +1,35 @@
+\documentclass[11pt,twoside,landscape]{book}   
+\usepackage[parfill]{parskip}  
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{epstopdf}
+\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+
+\usepackage[colorlinks=true, pdfstartview=FitV, linkcolor=blue, 
+            citecolor=blue, urlcolor=blue]{hyperref}
+
+\usepackage[margin=1cm]{geometry}
+\geometry{a6paper}   
+
+
+\title{Adhoc Presentations}
+\author{Ryan Boucher}
+\date{}
+\begin{document}
+
+\pagestyle{empty}
+\mainmatter
+	\input{stories/what_are_they.tex}
+	\clearpage
+	\input{stories/false_user_story.tex}
+	\clearpage
+	\input{stories/story_forms.tex}
+	\clearpage
+	\input{knowledge/business_card_knowledge_transfer.tex}
+	\clearpage
+	\input{acceptance/99_balloons.tex}
+	\clearpage
+	\input{testing/confirming_questions.tex}
+
+\end{document}
+\end
