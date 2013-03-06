@@ -1,0 +1,15 @@
+\section*{testing - automation - spectrum - 1}
+All testing sits upon a spectrum between manual and automatic. There is value all along the spectrum.
+
+\begin{tikzpicture}
+    \draw
+          (-6,0) node[xshift=-6pt,rotate=90] {Manual} -- (6,0)  node[xshift=6pt,rotate=-90] {Automatic};
+\end{tikzpicture}
+
+\clearpage
+\section*{testing - automation - spectrum - 2}
+The manual test is exploratory. What is covered changes with each execution and changes during execution as the tester responds to and learns from the behaviour of the system.
+
+The semi-automatic test is each little piece of code that helps you undertake a test, but doesn't do the test for you. A script that prepares an input file from a spreadsheet, a button you can press to lodge an order that would otherwise take 20 minutes across several systems.
+
+The automatic test includes all the unit tests out there. These run frequently, often without direct user input (i.e. as part of a continuous integration server).
